@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kviz</title>
+  </head>
+  <body>
+    <h1>Dobrodošli u kviz!</h1>
+    <div id="theme-selection">
+      <label for="theme">Izaberite temu:</label>
+      <select id="theme">
+        <option value="animals">Životinje</option>
+        <option value="history">Istorija</option>
+        <option value="sports">Sport</option>
+        <option value="music">Muzika</option>
+      </select>
+      <button id="start-quiz">Započni kviz</button>
+    </div>
+
+    <div id="quiz-container" style="display: none">
+      <div id="question"></div>
+      <div id="answers"></div>
+      <button id="submit-answer">Submit</button>
+    </div>
+
+    <div class="container">
+      <img src="../images/kocka.jpg" />
+    </div>
+
+    <script src="quiz.js"></script>
+
+    <script src="../quiz-animals/quiz-animals.js"></script>
+
+    <script>
+      // Dodajte JavaScript kod za pokretanje kviza kada se klikne dugme "Započni kviz"
+      document
+        .getElementById("start-quiz")
+        .addEventListener("click", function () {
+          // Proverite da li je odabrana tema "Životinje"
+          if (document.getElementById("theme").value === "animals") {
+            // Ako jeste, prikažite kontejner sa kvizom
+            document.getElementById("quiz-container").style.display = "block";
+            // Zatim pozovite funkciju za postavljanje pitanja o životinjama iz quiz-animals.js
+            setAnimalQuestion();
+          } else {
+            // Ako nije odabrana tema "Životinje", prikažite poruku upozorenja
+            alert(
+              "Izaberite temu 'Životinje' da biste pokrenuli kviz o životinjama."
+            );
+          }
+        });
+    </script>
+  </body>
+</html>

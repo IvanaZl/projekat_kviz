@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif; /* Postavljanje fonta za celu stranicu */
+  background-color: #5e97ba; /* Svetlo siva pozadina */
+  margin: 0; /* Uklanjanje spoljnog margina */
+  padding: 0; /* Uklanjanje unutrašnjih margina */
+}
+
+h1 {
+  text-align: center; /* Centriranje naslova */
+}
+
+#theme-selection {
+  text-align: center; /* Centriranje selekcije teme */
+  margin-top: 50px; /* Margina iznad selekcije teme */
+}
+
+#theme-selection label {
+  margin-right: 10px; /* Margina sa desne strane labele */
+}
+
+#quiz-container {
+  max-width: 600px; /* Maksimalna širina kontejnera za kviz */
+  margin: 50px auto; /* Centriranje kontejnera za kviz */
+  padding: 20px; /* Unutrašnji prostor kontejnera za kviz */
+  background-color: #3970a0; /* Bela pozadina kontejnera za kviz */
+  border-radius: 10px; /* Zaobljeni ivici kontejnera za kviz */
+  box-shadow: 0 0 10px rgba(10, 12, 52, 0.1); /* Senka za dodatnu dimenziju */
+}
+
+#question {
+  font-size: 18px; /* Veličina fonta za pitanje */
+  margin-bottom: 20px; /* Margina ispod pitanja */
+}
+
+#answers button {
+  display: block; /* Postavljanje dugmadi na blok nivo kako bi bili jedan ispod drugog */
+  width: 100%; /* Širina dugmadi */
+  padding: 10px; /* Dodavanje prostora oko teksta dugmadi */
+  margin-bottom: 10px; /* Margina između dugmadi */
+  border: none; /* Uklanjanje ivica dugmadi */
+  border-radius: 5px; /* Zaobljeni ivici dugmadi */
+  background-color: #3498db; /* Plava boja pozadine dugmadi */
+  color: #2f8b5f; /* Bela boja teksta na dugmadima */
+  font-size: 16px; /* Veličina fonta za tekst na dugmadima */
+  cursor: pointer; /* Kursor u obliku pokazivača za interaktivne elemente */
+}
+
+#answers button:hover {
+  background-color: #2980b9; /* Tamnija plava boja kada korisnik pređe mišem preko dugmeta */
+}
+
+#submit-answer {
+  background-color: #299456; /* Zelena boja pozadine za dugme za slanje odgovora */
+}
+
+#submit-answer:hover {
+  background-color: #219d55; /* Tamnija zelena boja kada korisnik pređe mišem preko dugmeta za slanje odgovora */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Postavljanje slike na horizontalnoj osi */
+  align-items: center; /* Postavljanje slike na vertikalnoj osi */
+  height: 100vh; /* Visina kontejnera na celoj visini prozora pregledača */
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
