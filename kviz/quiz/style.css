@@ -1,12 +1,14 @@
 body {
   font-family: Arial, sans-serif; /* Postavljanje fonta za celu stranicu */
-  background-color: #5e97ba; /* Svetlo siva pozadina */
+  background-color: #074447;
   margin: 0; /* Uklanjanje spoljnog margina */
   padding: 0; /* Uklanjanje unutrašnjih margina */
 }
 
 h1 {
   text-align: center; /* Centriranje naslova */
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(0, 0, 0);
 }
 
 #theme-selection {
@@ -22,9 +24,9 @@ h1 {
   max-width: 600px; /* Maksimalna širina kontejnera za kviz */
   margin: 50px auto; /* Centriranje kontejnera za kviz */
   padding: 20px; /* Unutrašnji prostor kontejnera za kviz */
-  background-color: #3970a0; /* Bela pozadina kontejnera za kviz */
+  background-color: #488679;
   border-radius: 10px; /* Zaobljeni ivici kontejnera za kviz */
-  box-shadow: 0 0 10px rgba(10, 12, 52, 0.1); /* Senka za dodatnu dimenziju */
+  box-shadow: 0 0 10px rgba(181, 91, 172, 0.1); /* Senka za dodatnu dimenziju */
 }
 
 #question {
@@ -39,32 +41,87 @@ h1 {
   margin-bottom: 10px; /* Margina između dugmadi */
   border: none; /* Uklanjanje ivica dugmadi */
   border-radius: 5px; /* Zaobljeni ivici dugmadi */
-  background-color: #3498db; /* Plava boja pozadine dugmadi */
-  color: #2f8b5f; /* Bela boja teksta na dugmadima */
+  background-color: #9c3f75;
+  color: #2f8b5f;
   font-size: 16px; /* Veličina fonta za tekst na dugmadima */
   cursor: pointer; /* Kursor u obliku pokazivača za interaktivne elemente */
 }
 
 #answers button:hover {
-  background-color: #2980b9; /* Tamnija plava boja kada korisnik pređe mišem preko dugmeta */
+  background-color: #2980b9;
 }
 
 #submit-answer {
-  background-color: #299456; /* Zelena boja pozadine za dugme za slanje odgovora */
+  background-color: #299456;
 }
 
 #submit-answer:hover {
-  background-color: #219d55; /* Tamnija zelena boja kada korisnik pređe mišem preko dugmeta za slanje odgovora */
+  background-color: #219d55;
 }
 
 .container {
+  margin-top: -50px;
   display: flex;
-  justify-content: center; /* Postavljanje slike na horizontalnoj osi */
-  align-items: center; /* Postavljanje slike na vertikalnoj osi */
+  justify-content: center; /* Postavljanje videa na horizontalnoj osi */
+  align-items: center; /* Postavljanje videa na vertikalnoj osi */
   height: 100vh; /* Visina kontejnera na celoj visini prozora pregledača */
+  gap: 40px;
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
+video {
+  max-width: 100%; /* Ograničava maksimalnu širinu videa */
+  max-height: 100%; /* Ograničava maksimalnu visinu videa */
+}
+
+#animal-lesson {
+  padding: 10px 20px; /* Unutrašnji prostor dugmeta */
+  background-color: #488679; /* Pozadinska boja dugmeta */
+  color: #fff; /* Boja teksta dugmeta */
+  border: none; /* Uklanjanje ivica dugmeta */
+  border-radius: 5px; /* Zaobljeni ivici dugmeta */
+  cursor: pointer; /* Kursor u obliku pokazivača */
+}
+
+#animal-lesson:hover {
+  background-color: #299456;
+}
+
+.styled-select {
+  padding: 10px 15px; /* Unutrašnji prostor za combobox */
+  border: none; /* Uklanjanje podrazumevanih ivica */
+  border-radius: 5px; /* Zaobljeni ivici */
+  background-color: #488679; /* Pozadinska boja */
+  color: #fff; /* Boja teksta */
+  font-size: 16px; /* Veličina fonta */
+  cursor: pointer; /* Kursor u obliku pokazivača */
+  margin-right: 10px; /* Margina desno od combobox-a */
+}
+
+.styled-select:hover {
+  background-color: #299456; /* Boja pozadine pri prelasku mišem */
+}
+
+.styled-button {
+  padding: 10px 20px; /* Unutrašnji prostor dugmeta */
+  background-color: #488679; /* Pozadinska boja dugmeta */
+  color: #fff; /* Boja teksta dugmeta */
+  border: none; /* Uklanjanje ivica dugmeta */
+  border-radius: 5px; /* Zaobljeni ivici dugmeta */
+  cursor: pointer; /* Kursor u obliku pokazivača */
+  font-size: 16px; /* Veličina fonta */
+  margin-top: 10px; /* Margina iznad dugmeta */
+}
+
+.styled-button:hover {
+  background-color: #299456; /* Boja pozadine pri prelasku mišem */
+}
+
+.styled-label {
+  background-color: #16bc74;
+  margin-right: 10px; /* Margina sa desne strane labele */
+  font-size: 15px; /* Veličina fonta za labelu */
+  color: black; /* Boja teksta za labelu */
+  font-weight: bold; /* Podebljan tekst */
+  border-radius: 3px;
+  padding: 10px 15px;
 }

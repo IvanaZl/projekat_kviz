@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #248160;
   margin: 0;
   padding: 0;
 }
@@ -61,14 +61,12 @@ button:hover {
   text-align: center;
 }
 
-/* Dodajemo stilove za kontejner sa dugmadima */
 #button-container {
-  display: flex; /* Koristimo fleksibilnu kutiju */
-  justify-content: space-between; /* Postavljamo dugmad jedno pored drugog */
+  display: flex;
+  justify-content: space-between;
 }
 
 button#submit-answer {
-  /* Stilovi za dugme "Submit" */
   background-color: #4caf50;
   color: white;
   border: none;
@@ -83,7 +81,6 @@ button#submit-answer {
 }
 
 button#back-question {
-  /* Stilovi za dugme "Back" */
   background-color: #ff9800;
   color: white;
   border: none;
@@ -95,11 +92,10 @@ button#back-question {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 10px; /* Prostor iznad dugmeta */
+  margin-top: 10px;
 }
 
 button#next-question {
-  /* Stilovi za dugme "Next" */
   background-color: #2196f3;
   color: white;
   border: none;
@@ -111,7 +107,7 @@ button#next-question {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 10px; /* Prostor iznad dugmeta */
+  margin-top: 10px;
 }
 
 #result-container {

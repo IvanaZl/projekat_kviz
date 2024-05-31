@@ -5,62 +5,73 @@ const questions = [
       a: "Tigar",
       b: "Lav",
       c: "Slon",
+      d: "Panda",
     },
     correctAnswer: "a",
   },
   {
     question:
-      "Koja životinja ima dugačku vrat i obično je najviša životinja na kopnu?",
+      "Koja životinja ima dugačak vrat i obično je najviša životinja na kopnu?",
     answers: {
       a: "Zebra",
       b: "Žirafa",
       c: "Slon",
+      d: "Konj",
     },
     correctAnswer: "b",
   },
   {
     question:
-      "Koja životinja ima krzno, voli da skače i obično ima velike uši?",
+      "Koja ptica ima dug vrat, pliva graciozno po vodi i često ima belo perje?",
     answers: {
-      a: "Medved",
-      b: "Zec",
-      c: "Lav",
+      a: "Petao",
+      b: "Labud",
+      c: "Patka",
+      d: "Rakun",
     },
     correctAnswer: "b",
   },
   {
-    question: "Koja životinja živi u vodi i obično ima peraja i rep?",
+    question:
+      "Koje kopneno sisarsko stvorenje obično ima dugačku surlu i velike uši?",
     answers: {
-      a: "Galeb",
-      b: "Hobotnica",
-      c: "Riba",
+      a: "Gepard",
+      b: "Iguana",
+      c: "Slon",
+      d: "Antilopa",
     },
     correctAnswer: "c",
   },
   {
-    question: "Koja životinja ima dugačak rep i može biti kućni ljubimac?",
+    question:
+      "Koje morsko stvorenje ima želatinozno telo i pipke sa žarnim ćelijama?",
     answers: {
-      a: "Hrčak",
-      b: "Mačka",
-      c: "Kunić",
+      a: "Ajkula",
+      b: "Rak",
+      c: "Meduza",
+      d: "Kit",
+    },
+    correctAnswer: "c",
+  },
+  {
+    question:
+      "Koja sposobnost je ključna za delfine i omogućava im da 'vide' svoj svet kroz zvuk?",
+    answers: {
+      a: "Termoregulacija",
+      b: "Eholokacija",
+      c: "Migracija",
+      d: "Komunikacija",
     },
     correctAnswer: "b",
   },
   {
-    question: "Koja životinja ima široko telo, oklop i obično se kreće polako?",
-    answers: {
-      a: "Kornjača",
-      b: "Zec",
-      c: "Koala",
-    },
-    correctAnswer: "a",
-  },
-  {
-    question: "Koja životinja ima velike kandže i često lovi noću?",
+    question:
+      "Koje stvorenje obično ima sposobnost menjanja boje, dugačak jezik i pokretne oči?",
     answers: {
       a: "Vuk",
       b: "Puma",
-      c: "Leopard",
+      c: "Kameleon",
+      d: "Dabar",
     },
     correctAnswer: "c",
   },
@@ -70,26 +81,29 @@ const questions = [
       a: "Veverica",
       b: "Orao",
       c: "Jastreb",
+      d: "Paun",
     },
     correctAnswer: "a",
   },
   {
-    question: "Koja životinja ima bodlje i obično se kreće po zemlji?",
+    question:
+      "Koja funkcija grba kod kamila omogućava da prežive duge periode bez hrane i vode?",
     answers: {
-      a: "Jež",
-      b: "Jazavac",
-      c: "Veverica",
+      a: "Skladištenje vode",
+      b: " Konverzija masti u energiju i vodu",
+      c: "Održavanje temperature tela",
     },
-    correctAnswer: "a",
+    correctAnswer: "b",
   },
   {
-    question: "Koja životinja ima dug i tanak rep i obično se krije u pesku?",
+    question:
+      "Koja grupa majmuna obuhvata vrste koje žive u tropskim šumama i savanama Afrike i Azije?",
     answers: {
-      a: "Krtica",
-      b: "Koala",
-      c: "Kameleon",
+      a: "Majmuni Starog sveta",
+      b: "Majmuni Novog sveta",
+      c: "Majmuni Srednjeg sveta",
     },
-    correctAnswer: "c",
+    correctAnswer: "a",
   },
 ];
 

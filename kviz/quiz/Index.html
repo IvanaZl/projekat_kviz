@@ -9,14 +9,14 @@
   <body>
     <h1>Dobrodošli u kviz!</h1>
     <div id="theme-selection">
-      <label for="theme">Izaberite temu:</label>
-      <select id="theme">
+      <label for="theme" class="styled-label">Izaberite temu:</label>
+      <select id="theme" class="styled-select">
         <option value="animals">Životinje</option>
         <option value="history">Istorija</option>
         <option value="sports">Sport</option>
         <option value="music">Muzika</option>
       </select>
-      <button id="start-quiz">Započni kviz</button>
+      <button id="start-quiz" class="styled-button">Započni kviz</button>
     </div>
 
     <div id="quiz-container" style="display: none">
@@ -26,30 +26,37 @@
     </div>
 
     <div class="container">
-      <img src="../images/kocka.jpg" />
+      <button id="animal-lesson">Lekcija o životinjama</button>
+      <video controls width="600" height="400">
+        <source src="../videos/study.mp4" type="video/mp4" />
+      </video>
     </div>
 
     <script src="quiz.js"></script>
-
     <script src="../quiz-animals/quiz-animals.js"></script>
+    <script src="../quiz-history/quiz-history.js"></script>
 
     <script>
-      // Dodajte JavaScript kod za pokretanje kviza kada se klikne dugme "Započni kviz"
       document
         .getElementById("start-quiz")
         .addEventListener("click", function () {
-          // Proverite da li je odabrana tema "Životinje"
           if (document.getElementById("theme").value === "animals") {
-            // Ako jeste, prikažite kontejner sa kvizom
             document.getElementById("quiz-container").style.display = "block";
-            // Zatim pozovite funkciju za postavljanje pitanja o životinjama iz quiz-animals.js
             setAnimalQuestion();
+          } else if (document.getElementById("theme").value === "history") {
+            document.getElementById("quiz-container").style.display = "block";
+            setHistoryQuestion();
           } else {
-            // Ako nije odabrana tema "Životinje", prikažite poruku upozorenja
             alert(
-              "Izaberite temu 'Životinje' da biste pokrenuli kviz o životinjama."
+              "Izaberite temu 'Životinje' ili 'Istorija' da biste pokrenuli odgovarajući kviz."
             );
           }
+        });
+
+      document
+        .getElementById("animal-lesson")
+        .addEventListener("click", function () {
+          window.location.href = "../lections/animal-lesson.html";
         });
     </script>
   </body>
