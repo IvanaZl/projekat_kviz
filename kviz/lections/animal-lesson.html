@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="animal-lesson.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
+
     <title>Lekcija o životinjama</title>
   </head>
   <body>
     <header>
-      <h1>Lekcija o životinjama</h1>
+      <h1 id="l1">Lekcija o životinjama</h1>
     </header>
+
+    <div id="rectangle-container"></div>
 
     <main>
       <section>
@@ -23,22 +30,24 @@
       </section>
 
       <section>
-        <h2>Klasifikacija životinja</h2>
-        <ul>
-          <li>
-            <strong>Beskičmenjaci:</strong> Životinje bez kičmenice, kao što su
-            insekti, mekušci i zglavkari.
-          </li>
-          <li>
-            <strong>Kičmenjaci:</strong> Životinje sa kičmenicom, kao što su
-            ribe, ptice, sisari, vodozemci i gmizavci.
-          </li>
-        </ul>
+        <h2 id="title">Klasifikacija životinja</h2>
+        <div id="info" style="display: none">
+          <ul>
+            <li>
+              <strong>Beskičmenjaci:</strong> Životinje bez kičmenice, kao što
+              su insekti, mekušci i zglavkari.
+            </li>
+            <li>
+              <strong>Kičmenjaci:</strong> Životinje sa kičmenicom, kao što su
+              ribe, ptice, sisari, vodozemci i gmizavci.
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section>
-        <h2>Staništa</h2>
-        <p>
+        <h2 id="title">Staništa</h2>
+        <p id="info" style="display: none">
           Životinje naseljavaju različita staništa, uključujući šume, pustinje,
           okeane, jezera i reke. Svako stanište pruža jedinstvene uslove koji
           utiču na vrstu i ponašanje životinja koje tu žive.
@@ -46,12 +55,14 @@
       </section>
 
       <section>
-        <h2>Interesantne činjenice</h2>
-        <ul>
-          <li>Najveća životinja na svetu je plavi kit.</li>
-          <li>Afrički slonovi su najveći kopneni sisari.</li>
-          <li>Pčele komuniciraju plesom kako bi pokazale gde je hrana.</li>
-        </ul>
+        <h2 id="title">Interesantne činjenice</h2>
+        <div id="info" style="display: none">
+          <ul>
+            <li>Najveća životinja na svetu je plavi kit.</li>
+            <li>Afrički slonovi su najveći kopneni sisari.</li>
+            <li>Pčele komuniciraju plesom kako bi pokazale gde je hrana.</li>
+          </ul>
+        </div>
       </section>
 
       <section class="monkey">
@@ -192,9 +203,22 @@
       </section>
     </main>
 
+    <div id="footer-placeholder"></div>
+
     <footer>
       <button id="back-to-home">Nazad na početnu</button>
     </footer>
+
+    <script>
+      $(document).ready(function () {
+        $("img").each(function () {
+          $(this).elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+          });
+        });
+      });
+    </script>
 
     <script>
       document
@@ -202,6 +226,27 @@
         .addEventListener("click", function () {
           window.location.href = "../quiz/index.html";
         });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("[id='title']").click(function () {
+          $("[id^='info-']").hide();
+          $(this).next().slideToggle();
+        });
+      });
+    </script>
+    <script>
+      document.getElementById("l1").addEventListener("click", function () {
+        const rectangleContainer = document.getElementById("l1");
+        const rectangle = document.createElement("div");
+        rectangle.className = "rectangle";
+        rectangleContainer.appendChild(rectangle);
+
+        rectangle.addEventListener("animationend", function () {
+          rectangle.remove();
+        });
+      });
     </script>
   </body>
 </html>

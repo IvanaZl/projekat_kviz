@@ -1,50 +1,50 @@
 body {
-  font-family: Arial, sans-serif; /* Postavljanje fonta za celu stranicu */
+  font-family: Arial, sans-serif;
   background-color: #074447;
-  margin: 0; /* Uklanjanje spoljnog margina */
-  padding: 0; /* Uklanjanje unutrašnjih margina */
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  text-align: center; /* Centriranje naslova */
+  text-align: center;
   font-family: "Times New Roman", Times, serif;
   color: rgb(0, 0, 0);
 }
 
 #theme-selection {
-  text-align: center; /* Centriranje selekcije teme */
-  margin-top: 50px; /* Margina iznad selekcije teme */
+  text-align: center;
+  margin-top: 50px;
 }
 
 #theme-selection label {
-  margin-right: 10px; /* Margina sa desne strane labele */
+  margin-right: 10px;
 }
 
 #quiz-container {
-  max-width: 600px; /* Maksimalna širina kontejnera za kviz */
-  margin: 50px auto; /* Centriranje kontejnera za kviz */
-  padding: 20px; /* Unutrašnji prostor kontejnera za kviz */
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
   background-color: #488679;
-  border-radius: 10px; /* Zaobljeni ivici kontejnera za kviz */
-  box-shadow: 0 0 10px rgba(181, 91, 172, 0.1); /* Senka za dodatnu dimenziju */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(181, 91, 172, 0.1);
 }
 
 #question {
-  font-size: 18px; /* Veličina fonta za pitanje */
-  margin-bottom: 20px; /* Margina ispod pitanja */
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 #answers button {
-  display: block; /* Postavljanje dugmadi na blok nivo kako bi bili jedan ispod drugog */
-  width: 100%; /* Širina dugmadi */
-  padding: 10px; /* Dodavanje prostora oko teksta dugmadi */
-  margin-bottom: 10px; /* Margina između dugmadi */
-  border: none; /* Uklanjanje ivica dugmadi */
-  border-radius: 5px; /* Zaobljeni ivici dugmadi */
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
   background-color: #9c3f75;
   color: #2f8b5f;
-  font-size: 16px; /* Veličina fonta za tekst na dugmadima */
-  cursor: pointer; /* Kursor u obliku pokazivača za interaktivne elemente */
+  font-size: 16px;
+  cursor: pointer;
 }
 
 #answers button:hover {
@@ -62,24 +62,24 @@ h1 {
 .container {
   margin-top: -50px;
   display: flex;
-  justify-content: center; /* Postavljanje videa na horizontalnoj osi */
-  align-items: center; /* Postavljanje videa na vertikalnoj osi */
-  height: 100vh; /* Visina kontejnera na celoj visini prozora pregledača */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   gap: 40px;
 }
 
 video {
-  max-width: 100%; /* Ograničava maksimalnu širinu videa */
-  max-height: 100%; /* Ograničava maksimalnu visinu videa */
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #animal-lesson {
-  padding: 10px 20px; /* Unutrašnji prostor dugmeta */
-  background-color: #488679; /* Pozadinska boja dugmeta */
-  color: #fff; /* Boja teksta dugmeta */
-  border: none; /* Uklanjanje ivica dugmeta */
-  border-radius: 5px; /* Zaobljeni ivici dugmeta */
-  cursor: pointer; /* Kursor u obliku pokazivača */
+  padding: 10px 20px;
+  background-color: #488679;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #animal-lesson:hover {
@@ -87,41 +87,41 @@ video {
 }
 
 .styled-select {
-  padding: 10px 15px; /* Unutrašnji prostor za combobox */
-  border: none; /* Uklanjanje podrazumevanih ivica */
-  border-radius: 5px; /* Zaobljeni ivici */
-  background-color: #488679; /* Pozadinska boja */
-  color: #fff; /* Boja teksta */
-  font-size: 16px; /* Veličina fonta */
-  cursor: pointer; /* Kursor u obliku pokazivača */
-  margin-right: 10px; /* Margina desno od combobox-a */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #488679;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 .styled-select:hover {
-  background-color: #299456; /* Boja pozadine pri prelasku mišem */
+  background-color: #299456;
 }
 
 .styled-button {
-  padding: 10px 20px; /* Unutrašnji prostor dugmeta */
-  background-color: #488679; /* Pozadinska boja dugmeta */
-  color: #fff; /* Boja teksta dugmeta */
-  border: none; /* Uklanjanje ivica dugmeta */
-  border-radius: 5px; /* Zaobljeni ivici dugmeta */
-  cursor: pointer; /* Kursor u obliku pokazivača */
-  font-size: 16px; /* Veličina fonta */
-  margin-top: 10px; /* Margina iznad dugmeta */
+  padding: 10px 20px;
+  background-color: #488679;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .styled-button:hover {
-  background-color: #299456; /* Boja pozadine pri prelasku mišem */
+  background-color: #299456;
 }
 
 .styled-label {
   background-color: #16bc74;
-  margin-right: 10px; /* Margina sa desne strane labele */
-  font-size: 15px; /* Veličina fonta za labelu */
-  color: black; /* Boja teksta za labelu */
-  font-weight: bold; /* Podebljan tekst */
+  margin-right: 10px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
   border-radius: 3px;
   padding: 10px 15px;
 }
