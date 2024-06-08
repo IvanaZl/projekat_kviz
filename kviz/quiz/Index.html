@@ -32,6 +32,11 @@
       </video>
     </div>
 
+    <div class="container2">
+      <h2>Mapa za ucenje geografije</h2>
+      <button id="open-map" class="geo-button">Otvori mapu</button>
+    </div>
+
     <script src="quiz.js"></script>
     <script src="../quiz-animals/quiz-animals.js"></script>
     <script src="../quiz-history/quiz-history.js"></script>
@@ -57,6 +62,12 @@
         .getElementById("animal-lesson")
         .addEventListener("click", function () {
           window.location.href = "../lections/animal-lesson.html";
+        });
+
+      document
+        .getElementById("open-map")
+        .addEventListener("click", function () {
+          window.location.href = "map.html";
         });
     </script>
   </body>
