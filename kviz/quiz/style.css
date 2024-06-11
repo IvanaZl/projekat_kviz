@@ -86,6 +86,20 @@ video {
   background-color: #299456;
 }
 
+#sport-lesson {
+  padding: 10px 20px;
+  background-color: #291a46;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#sport-lesson:hover {
+  background-color: #291a46;
+}
+
+
 .styled-select {
   padding: 10px 15px;
   border: none;
