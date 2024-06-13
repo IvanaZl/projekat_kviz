@@ -73,7 +73,7 @@ video {
   max-height: 100%;
 }
 
-#animal-lesson {
+#animal-lesson, #history-lesson {
   padding: 10px 20px;
   background-color: #488679;
   color: #fff;
@@ -82,7 +82,7 @@ video {
   cursor: pointer;
 }
 
-#animal-lesson:hover {
+#animal-lesson:hover, #history-lesson:hover {
   background-color: #299456;
 }
 

@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #4c56af;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+}
+
+details {
+    background: #fff;
+    margin: 1rem auto; 
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #5477a9;
+    text-align: center;
+    max-width: 50%; 
+}
+
+
+summary {
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center; 
+    color: #4c56af;
+}
+
+
+h3 {
+    color: #110267;
+    text-align: left;
+}
+
+p {
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+footer {
+    background: #4c56af;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    clear: both; 
+}
+
+
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 320px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+
+
+/* Stilizacija kreativne slike */
+.creative-image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.creative-image {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+}
+
+.creative-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.creative-image:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.creative-image:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+
+#back-to-home {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #4c56af;
+    border: 2px solid #4c56af;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #back-to-home:hover {
+    background-color: #5477a9;
+    color: #fff;
+    border-color: #5477a9;
+  }

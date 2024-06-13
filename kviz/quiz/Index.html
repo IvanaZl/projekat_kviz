@@ -30,6 +30,7 @@
       <video controls width="600" height="400">
         <source src="../videos/study.mp4" type="video/mp4" />
       </video>
+      <button id="history-lesson">Lekcija o istoriji</button>
     </div>
 
     <div class="container">
@@ -75,6 +76,12 @@
         .getElementById("animal-lesson")
         .addEventListener("click", function () {
           window.location.href = "../lections/animal-lesson.html";
+        });
+
+      document
+        .getElementById("history-lesson")
+        .addEventListener("click", function () {
+          window.location.href = "../lections/history-lesson.html";
         });
 
       document
