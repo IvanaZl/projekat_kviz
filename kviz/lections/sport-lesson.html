@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sport-lesson.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
+
+    <title>Lekcija o sportu</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="l1">Lekcija o sportu</h1>
+    </header>
+
+    <div id="rectangle-container"></div>
+
+    <main>
+      <section>
+        <h2>Uvod</h2>
+        <p>
+        Sport je globalni fenomen koji obuhvata raznolike aktivnosti, od fizički zahtevnih takmičenja do rekreativnih hobija.
+        Kroz sport, ljudi razvijaju fizičku kondiciju, motoričke veštine i mentalnu izdržljivost. Takmičarski duh u sportu
+        podstiče pojedince da prevaziđu granice svojih sposobnosti i postignu svoje ciljeve. Sport ima moć da okupi ljude
+        različitih pozadina i kultura, gradeći mostove među zajednicama. Pored toga, sport ima veliki ekonomski uticaj, 
+        kao i ulogu u promociji zdravog načina života i društvenih vrednosti poput fer pleja i timskog rada. 
+        Uprkos svojim izazovima, sport ostaje važan deo života mnogih ljudi širom sveta, donoseći radost, inspiraciju i zajedništvo..
+        </p>
+      </section>
+
+      <section>
+        <h2 id="title">Osnovna podela sporta</h2>
+        <div id="info" style="display: none">
+          <ul>
+            <li>
+              <strong>Individualni sportovi:</strong> Individualni sportovi se fokusiraju na performanse pojedinca
+             i zahtevaju ličnu odgovornost i samodisciplinu u treninzima i takmičenjima.
+            </li>
+            <li>
+              <strong>Sportovi sa loptom:</strong> Timski sportovi podstiču saradnju, 
+              komunikaciju i međusobnu podršku između članova tima radi postizanja zajedničkog cilja.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="title">Zanimljivosti</h2>
+        <div id="info" style="display: none">
+          <ul>
+            <li>Pro Recco ima najviše osvojenih titula u vaterpolu.</li>
+            <li>U muškoj atletici rekord na 100m drži Usain Bolt.</li>
+            <li>Najviše titula Rolland-Garossa ima Rafael Nadal.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="basketball">
+        <h2>Košarka</h2>
+        <p>
+            Košarka je dinamičan timski sport koji se igra između dva tima sa ciljem 
+            da se postigne što više poena ubacivanjem lopte u protivnički koš. Ovaj popularni sport
+            zahteva brzinu, agilnost, koordinaciju i taktičko razmišljanje, te je poznat 
+            po uzbuđujućim akcijama, brzim prelazima i spektakularnim koševima.
+            Košarka je osnovana u Americi 1891. godine.
+        </p>
+        <video controls width="400" height="400">
+          <source src="../videos/basketball.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section>
+        <h2>Fudbal</h2>
+        <p>
+            Fudbal je najpopularniji sport na svetu, koji se igra između dva tima
+            sa ciljem da se lopta ubaci u protivnički gol. Ova igra zahteva kombinaciju
+            tehnike, taktike, kondicije i timskog rada, te je poznata po svojoj globalnoj
+            privlačnosti i strasti koju budi kod miliona navijača širom sveta. Neki od najvećih
+            legendi su svakako Kristijano Ronaldo, osvajač 5 zlatnih lopti, trener Jose Mourinho
+            , koji sa razlogom ima nadimak ,,The Special One", a najveći klub na svetu je Real 
+            Madrid, ovogodišnji osvajač Lige Šampiona za sezonu 23/24.
+        </p>
+        <video controls width="400" height="400">
+          <source src="../videos/football.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section>
+        <h2>Olimpijske igre</h2>
+        <p>
+            Olimpijske igre su najprestižnije međunarodno sportsko takmičenje koje se
+            održava svake četiri godine, okupljajući najbolje sportiste iz celog sveta. 
+            Ove igre promovišu mir, prijateljstvo i sportski duh, nudeći priliku sportistima
+            da se takmiče na najvišem nivou i inspirišu milione širom sveta svojim dostignućima.
+            Srbija je na prošlim Olimpijskim igrama u Tokiju osvojila 3 zlatne medalje.
+        </p>
+        <video controls width="400" height="400">
+          <source src="../videos/olympics.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section>
+        <h2>Rukomet</h2>
+        <p>
+            Rukomet je brz i dinamičan timski sport koji se igra sa sedam igrača u polju i golmanom.
+            Cilj igre je postići više golova od protivničkog tima, koristeći kombinaciju driblinga,
+            pasova i šuteva. Rukomet je popularan širom sveta, posebno u Evropi, gde se igra
+            na vrhunskom nivou u klubovima i nacionalnim timovima. Ovogodišnji osvajač Srbije u 
+            rukometu za sezonu 23/24 je RK Vojvodina. 
+        </p>
+        <video controls width="400" height="400">
+          <source src="../videos/handball.mp4" type="video/mp4" />
+        </video>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <footer>
+      <button id="back-to-home">Nazad na početnu</button>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        $("img").each(function () {
+          $(this).elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document
+        .getElementById("back-to-home")
+        .addEventListener("click", function () {
+          window.location.href = "../quiz/index.html";
+        });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("[id='title']").click(function () {
+          $("[id^='info-']").hide();
+          $(this).next().slideToggle();
+        });
+      });
+    </script>
+    <script>
+      document.getElementById("l1").addEventListener("click", function () {
+        const rectangleContainer = document.getElementById("l1");
+        const rectangle = document.createElement("div");
+        rectangle.className = "rectangle";
+        rectangleContainer.appendChild(rectangle);
+
+        rectangle.addEventListener("animationend", function () {
+          rectangle.remove();
+        });
+      });
+    </script>
+  </body>
+</html>

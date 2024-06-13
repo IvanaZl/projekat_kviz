@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #074447;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(0, 0, 0);
+}
+
+#theme-selection {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#theme-selection label {
+  margin-right: 10px;
+}
+
+#quiz-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #488679;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(181, 91, 172, 0.1);
+}
+
+#question {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#answers button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #9c3f75;
+  color: #2f8b5f;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#answers button:hover {
+  background-color: #2980b9;
+}
+
+#submit-answer {
+  background-color: #299456;
+}
+
+#submit-answer:hover {
+  background-color: #219d55;
+}
+
+.container {
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 40px;
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#animal-lesson, #history-lesson {
+  padding: 10px 20px;
+  background-color: #488679;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#animal-lesson:hover, #history-lesson:hover {
+  background-color: #299456;
+}
+
+#sport-lesson {
+  padding: 10px 20px;
+  background-color: #291a46;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#sport-lesson:hover {
+  background-color: #291a46;
+}
+
+
+.styled-select {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #488679;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.styled-select:hover {
+  background-color: #299456;
+}
+
+.styled-button {
+  padding: 10px 20px;
+  background-color: #488679;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.styled-button:hover {
+  background-color: #299456;
+}
+
+.styled-label {
+  background-color: #16bc74;
+  margin-right: 10px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+
+.container2 {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.container2 h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.geo-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
