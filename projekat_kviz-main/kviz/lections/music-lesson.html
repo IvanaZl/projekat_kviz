@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="music-lesson.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
+
+    <title>Lekcija o muzici</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="l1">Lekcija o muzici</h1>
+    </header>
+
+    <div id="rectangle-container"></div>
+
+    <main>
+      <section>
+        <h2>Uvod</h2>
+        <p>
+        Muzika je univerzalni jezik čovečanstva, izražajna forma koja premošćuje kulturološke i jezičke barijere,
+        dopirući do najdubljih slojeva ljudske emocije. Od primitivnih ritmova prvobitnih zajednica do složenih simfonija klasične muzike,
+         muzika prati ljudski razvoj, igrajući ključnu ulogu u oblikovanju kulture, tradicije i identiteta. Ona je sredstvo komunikacije i
+         izražavanja, omogućavajući ljudima da prenose osećanja, misli i priče na načine koji reči često ne mogu da postignu.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="title">Muzički žanrovi</h2>
+        <div id="info" style="display: none">
+          <ul>
+            <li>
+              <strong>Klasična muzika:</strong> Johann Sebastian Bach, Antonio Vivaldi, Wolfgang Amadeus Mozart, Ludwig van Beethoven.
+            </li>
+            <li>
+              <strong>Popularna muzika:</strong> Michael Jackson, Madonna, Taylor Swift, The Beatles, Led Zeppelin, Nirvana,
+              Beyoncé, Calvin Harris, Avicii.
+            </li>
+            <li>
+              <strong>Folk:</strong> Bob Dylan, Joan Baez.
+            </li>
+            <li>
+              <strong>Latino muzika:</strong> Romeo Santos, Aventura, Marc Anthony, Hector Lavoe.
+            </li>
+            <li>
+              <strong>Jazz muzika:</strong> Louis Armstrong, Duke Ellington, Weather Report, Herbie Hancock.
+            </li>
+            <li>
+              <strong>Metal:</strong> Black Sabbath, Iron Maiden, Death, Cannibal Corpse.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="title">Zanimljivosti</h2>
+        <div id="info" style="display: none">
+          <ul>
+       <li>Wolfgang Amadeus Mozart je bio poznat po svom izuzetnom sluhu i sposobnosti da komponuje dela 
+        u potpunosti u svojoj glavi pre nego što bi ih zapisao. Smatra se da je Mozart bio u stanju da
+         čuje celu simfoniju u svojoj glavi, uključujući sve instrumente i njihove deonice, pre nego što bi dirigent
+        ili muzičari čak i videli note.</li>
+        <li>Bob Marley je jednom izjavio da je J. S. Bach bio njegov omiljeni kompozitor. 
+        Marley je bio fasciniran Bachovim radom i često bi ga slušao kako bi pronašao inspiraciju za svoju muziku.</li>
+        <li>Prvi muzički video koji je emitovan na televiziji bio je za pesmu "Video Killed the Radio Star" grupe The Buggles, 
+        emitovan na MTV-u 1. avgusta 1981. godine. Ovaj događaj označio je početak ere muzičkih video spotova kao važnog dela industrije zabave.</li>
+        <li>Slušanje muzike može imati pozitivne efekte na mozak.
+         Na primer, klasična muzika, poput dela Mozarta i Beethovena, pokazala se korisnom u poboljšanju memorije i koncentracije kod ljudi.</li>
+         </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="title">Uticaj muzike na društvo i kulturu</h2>
+        <div id="info" style="display: none">
+          <ul>
+            <li>Muzika kao sredstvo društvenih promena: 
+            Primeri pesama i albuma koji su igrali ključnu ulogu u društvenim pokretima kao što su građanska prava ili feministički pokret.</li>
+            <li>Muzika i identitet: Kako određeni žanrovi muzike odražavaju i oblikuju identitet različitih grupa i zajednica.</li>
+            <li>Muzički festivali i njihov uticaj na lokalnu ekonomiju i turizam.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="rock">
+        <h2>Rock i Pop</h2>
+        <p>
+         <li>The Beatles - Britanski bend koji je promenio tok muzičke istorije svojim inovativnim pristupom pesmama i albumima poput "Sgt.
+         Pepper's Lonely Hearts Club Band" i "Abbey Road". </li>
+         <li>Queen - Legendarni britanski bend predvođen Freddie Mercuryjem, poznat po himni "Bohemian Rhapsody" i energičnim koncertima. </li>
+         <li>Beyoncé - Savremena pop ikona koja je poznata po svojoj moći na sceni, izvanrednim vokalnim sposobnostima i uticaju na žensku emancipaciju kroz svoju muziku. </li>
+        </p>
+        <video controls width="400" height="400">
+          <source src="../videos/queen.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section>
+        <h2>Blues i Jazz</h2>
+        <p>
+        <li>Eric Clapton - Gitarski virtuoz i pevač koji je prešao iz bluesa u rock, ali je ostavio značajan trag svojim blues radom,
+         uključujući i album "From the Cradle" posvećen isključivo bluesu. </li>
+        <li>Louis Armstrong - Pionir džeza, poznat po svom virtuoznom trubljanju i pesmama kao što su "What a Wonderful World" i "Hello, Dolly!". </li>
+        <li>Ella Fitzgerald - Legendarna džez pevačica poznata po svom besprekornom vokalu i interpretacijama pesama kao što su "Summertime" i "Dream a Little Dream of Me". </li>
+        </p>
+        <video controls width="400" height="400">
+          <source src="../videos/pop.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section>
+        <h2>Klasična muzika</h2>
+        <p>
+        <li>Johann Sebastian Bach - Nemački kompozitor čiji su radovi obuhvatali sve vrste muzike svog vremena,
+        uključujući crkvene kantate, orguljske kompozicije i dela za solo instrumente kao što je "Toccata i Fuga u d-molu". </li>
+        <li>Wolfgang Amadeus Mozart - Austrijski kompozitor čija se muzika ističe po gracioznosti, eleganciji i dubokoj emotivnosti. Njegova dela uključuju operu "The Magic Flute" i simfoniju "Jupiter". </li>
+        <li>Igor Stravinski - Ruski kompozitor čije su inovativne kompozicije poput baleta "The Rite of Spring" promenile tok muzičkog modernizma. </li>
+        </p>
+        <video controls width="400" height="400">
+          <source src="../videos/klasicna.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section>
+        <h2>Hip Hop i Rep</h2>
+        <p>
+        <li>Nas - Njujorški reper čiji su tekstovi o životu u siromaštvu i društvenim problemima postali ikonični u hip hop kulturi. </li>
+        <li>Tupac Shakur (2Pac) - Američki reper i ikona hip hopa, poznat po svojim introspektivnim tekstovima i socijalnim porukama. </li>
+        </p>
+        <video controls width="400" height="400">
+          <source src="../videos/nas.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section>
+        <h2>R&B</h2>
+        <p>
+        <li>Michael Jackson - Iako je poznat kao kralj popa, Michael Jackson je počeo kao R&B izvođač sa grupom Jackson 5 pre nego što je postao svetska superzvezda.
+         Njegova R&B dela uključuju albume poput "Off the Wall" i "Thriller". </li>
+        <li>Rihanna - Barbadoška pevačica koja je prešla iz R&B-a u pop i dance muziku, poznata po hitovima kao što su "Umbrella", "Diamonds" i "Work". </li>
+        </p>
+        <video controls width="400" height="400">
+          <source src="../videos/rihanna.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section>
+        <h2>Najpoznatija muzička takmičenja</h2>
+        <p>
+          <li>Eurovision Song Contest</li>
+          <li>American Idol</li>
+          <li>The Voice</li>
+          <li>X Factor</li>
+          <li>The Eurovision Young Musicians</li>
+          <li>Grammy Awards</li>
+          <li>MTV Video Music Awards</li>
+        </p>
+        <video controls width="400" height="400">
+          <source src="../videos/eurovision.mp4" type="video/mp4" />
+        </video>
+      </section>
+      
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <footer>
+      <button id="back-to-home">Nazad na početnu</button>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        $("img").each(function () {
+          $(this).elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document
+        .getElementById("back-to-home")
+        .addEventListener("click", function () {
+          window.location.href = "../quiz/index.html";
+        });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $("[id='title']").click(function () {
+          $("[id^='info-']").hide();
+          $(this).next().slideToggle();
+        });
+      });
+    </script>
+    <script>
+      document.getElementById("l1").addEventListener("click", function () {
+        const rectangleContainer = document.getElementById("l1");
+        const rectangle = document.createElement("div");
+        rectangle.className = "rectangle";
+        rectangleContainer.appendChild(rectangle);
+
+        rectangle.addEventListener("animationend", function () {
+          rectangle.remove();
+        });
+      });
+    </script>
+  </body>
+</html>
