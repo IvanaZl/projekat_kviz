@@ -40,6 +40,13 @@
       </video>
     </div>
 
+    <div class="container">
+      <button id="music-lesson">Lekcija o muzici</button>
+      <video controls width="600" height="400">
+        <source src="../videos/music.mp4" type="video/mp4" />
+      </video>
+    </div>
+
     <div class="container2">
       <h2>Mapa za ucenje geografije</h2>
       <button id="open-map" class="geo-button">Otvori mapu</button>
@@ -60,15 +67,14 @@
           } else if (document.getElementById("theme").value === "history") {
             document.getElementById("quiz-container").style.display = "block";
             setHistoryQuestion();
-          } 
-          else if (document.getElementById("theme").value === "sport") {
+          } else if (document.getElementById("theme").value === "sport") {
             document.getElementById("quiz-container").style.display = "block";
             setSportQuestion();
-          }          
-          else {
-            alert(
-              "Izaberite temu 'Životinje' ili 'Istorija' da biste pokrenuli odgovarajući kviz."
-            );
+          } else if (document.getElementById("theme").value === "music") {
+            document.getElementById("quiz-container").style.display = "block";
+            setSportQuestion();
+          } else {
+            alert("Izaberite temu da biste pokrenuli odgovarajući kviz.");
           }
         });
 
@@ -88,6 +94,12 @@
         .getElementById("sport-lesson")
         .addEventListener("click", function () {
           window.location.href = "../lections/sport-lesson.html";
+        });
+
+      document
+        .getElementById("music-lesson")
+        .addEventListener("click", function () {
+          window.location.href = "../lections/music-lesson.html";
         });
 
       document

@@ -73,7 +73,8 @@ video {
   max-height: 100%;
 }
 
-#animal-lesson, #history-lesson {
+#animal-lesson,
+#history-lesson {
   padding: 10px 20px;
   background-color: #488679;
   color: #fff;
@@ -82,7 +83,8 @@ video {
   cursor: pointer;
 }
 
-#animal-lesson:hover, #history-lesson:hover {
+#animal-lesson:hover,
+#history-lesson:hover {
   background-color: #299456;
 }
 
@@ -98,7 +100,6 @@ video {
 #sport-lesson:hover {
   background-color: #291a46;
 }
-
 
 .styled-select {
   padding: 10px 15px;
@@ -167,4 +168,13 @@ video {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 4px;
+}
+
+#music-lesson {
+  padding: 10px 20px;
+  background-color: #944365;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
