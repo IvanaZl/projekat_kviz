@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chat_bot.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
     <title>Kviz</title>
   </head>
   <body>
@@ -47,6 +57,22 @@
       </video>
     </div>
 
+    <div id="chat-container">
+      <h1><i class="material-icons">android</i> Chat Bot</h1>
+
+      <div id="chat-messages">
+        <div id="messages"></div>
+      </div>
+      <input
+        type="text"
+        id="user-message-input"
+        placeholder="Unesite poruku..."
+      />
+      <button id="send-user-message">
+        <i class="material-icons">send</i>
+      </button>
+    </div>
+
     <div class="container2">
       <h2>Mapa za ucenje geografije</h2>
       <button id="open-map" class="geo-button">Otvori mapu</button>
@@ -56,6 +82,7 @@
     <script src="../quiz-animals/quiz-animals.js"></script>
     <script src="../quiz-history/quiz-history.js"></script>
     <script src="../quiz-sport/quiz-sport.js"></script>
+    <script src="chat_bot.js"></script>
 
     <script>
       document
